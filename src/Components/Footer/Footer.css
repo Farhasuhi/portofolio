@@ -24,3 +24,8 @@
     align-items: center;
     gap: 2rem;
 }
+@media screen and (max-width: 576px){
+    .f-content{
+        margin-top: 4.5rem;
+    }
+}

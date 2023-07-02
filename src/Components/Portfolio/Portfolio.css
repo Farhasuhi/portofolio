@@ -80,8 +80,12 @@
     .Cards {
         grid-template-columns: 1fr;
         gap: 150px;
+        margin-right: -90px;
     }
     .portfolio {
         padding-top: 50px;
     }
+    .app{
+        padding: 10px 10px 10px 20px;
+    } 
 }
