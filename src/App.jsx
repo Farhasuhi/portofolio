@@ -8,19 +8,36 @@ import Portfolio from './Components/Portfolio/Portfolio'
 import Services from './Components/Services/Services'
 import Skills from './Components/Skills/Skills'
 import { themeContext } from '../Context.jsx'
-import { useContext } from 'react'
+import { useContext, useEffect, useState } from 'react'
+import { RiseLoader } from 'react-spinners'
 function App() {
-  const theme=useContext(themeContext);
-  const darkMode=theme.state.darkMode;
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
   return (
-    <div className='app' style={{background: darkMode?'black':'',color:darkMode?'white':""}}>
-      <Navbar></Navbar>
-      <Intro></Intro>
-      <Services></Services>
-      <Skills></Skills>
-      <Portfolio></Portfolio>
-      <Contact></Contact>
-      <Footer></Footer>
+    <div>
+      {
+        loading ? <div className="loader "><RiseLoader color="#FDB61A" loading={loading}
+        size={30}
+        aria-label="Loading Spinner"
+        data-testid="loader" />
+        <h5>Loading....</h5>
+        </div> : <div className='app' style={{ background: darkMode ? 'black' : '', color: darkMode ? 'white' : "" }}>
+          <Navbar></Navbar>
+          <Intro></Intro>
+          <Services></Services>
+          <Skills></Skills>
+          <Portfolio></Portfolio>
+          <Contact></Contact>
+          <Footer></Footer>
+        </div>
+      }
     </div>
   )
 }

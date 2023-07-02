@@ -22,7 +22,7 @@ const Portfolio = () => {
                         <span>Chefs Corner</span>
                     </div>
                     <div className='button p-buttons'>
-                        <a href=""><button>Live Demo</button></a>
+                        <a href="https://chefs-corner-a5e7d.web.app/"><button>Live Demo</button></a>
                         <a href=""><button>Client Site</button></a>
                         <a href=""><button>Server Site</button></a>
                     </div>
@@ -37,7 +37,7 @@ const Portfolio = () => {
                         <span>Dream Disney</span>
                     </div>
                     <div className='button p-buttons'>
-                        <a href=""><button>Live Demo</button></a>
+                        <a href="https://dream-diseny.web.app/"><button>Live Demo</button></a>
                         <a href=""><button>Client Site</button></a>
                         <a href=""><button>Server Site</button></a>
                     </div>
@@ -52,7 +52,7 @@ const Portfolio = () => {
                         <span>Art & Ink</span>
                     </div>
                     <div className='button p-buttons'>
-                        <a href=""><button>Live Demo</button></a>
+                        <a href="https://storied-queijadas-256148.netlify.app/"><button>Live Demo</button></a>
                         <a href=""><button>Client Site</button></a>
                         <a href=""><button>Server Site</button></a>
                     </div>
