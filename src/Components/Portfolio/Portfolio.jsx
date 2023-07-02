@@ -13,7 +13,7 @@ const Portfolio = () => {
             </div>
             <div className='Cards'>
                 <div className='portfolio-card'>
-                    <LazyLoad height={200}>
+                    <LazyLoad height={500}>
                         <div className='image-wrapper'>
                             <a href=""><img src={portfolio1} alt="" /></a>
                         </div>
@@ -28,7 +28,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className='portfolio-card'>
-                    <LazyLoad height={200}>
+                    <LazyLoad height={500}>
                         <div className='image-wrapper'>
                             <a href=""><img src={portfolio2} alt="" /></a>
                         </div>
@@ -43,7 +43,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className='portfolio-card'>
-                    <LazyLoad height={200}>
+                    <LazyLoad height={500}>
                         <div className='image-wrapper'>
                             <a href=""><img src={portfolio3} alt="" /></a>
                         </div>
